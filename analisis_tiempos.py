@@ -53,5 +53,3 @@ for bar in bars:
 plt.tight_layout()
 plt.show()
 
-# Guardar la imagen directamente para el informe:
-plt.savefig('comparativa_tiempos.png')
