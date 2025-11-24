@@ -1,9 +1,19 @@
 # 📄 Actividad Autónoma 4: Buenas Prácticas en Programación para Ciencia de Datos
 
+<<<<<<< HEAD
 **Nombres:** Gabriel Alejandro Niama Martínez
 **Fecha:** 23/11/2025
 **Carrera:** Ciencia de Datos e Inteligencia Artificial
+=======
+**Nombres:** Gabriel Alejandro Niama Martínez.
+
+**Fecha:** 23/11/2025
+
+**Carrera:** Ciencia de datos e Inteligencia artificial.
+
+>>>>>>> ee188ca21a6c2fb885b6c9c0583b902520930962
 **Periodo académico:** 2025 - 2S
+
 **Semestre:** Tercero
 
 **Repositorio GitHub:** [PEGAR AQUÍ EL ENLACE COMPLETO DE TU REPOSITORIO]
@@ -92,6 +102,11 @@ La **drástica mejora del $99.72\%$** en el rendimiento, confirmada por un facto
 
 ### Buenas Prácticas y Recomendaciones
 
+<<<<<<< HEAD
 1.  **Profiling:** El uso de herramientas de profiling (`cProfile`) es esencial para la gestión del rendimiento, asegurando que los esfuerzos de optimización se dirijan al punto exacto donde se consume el tiempo.
 2.  **Control de Versiones:** La documentación y el registro de cambios en el repositorio de **GitHub** garantiza la trazabilidad del desarrollo y facilita la colaboración.
 3.  **Algoritmos Avanzados:** Para futuros proyectos con mayores volúmenes de datos, se recomienda explorar algoritmos de cribado de eficiencia superior, como el **Cribado de Eratóstenes**, para maximizar la velocidad.
+=======
+* Para futuros proyectos de Ciencia de Datos con grandes volúmenes de números, se recomienda usar el **cribado de Eratóstenes** o el uso de librerías altamente optimizadas (como SciPy) para lograr una eficiencia aún mayor que la obtenida.
+* Mantener el control de versiones con Git y la documentación en Markdown facilita la colaboración y la revisión del código.
+>>>>>>> ee188ca21a6c2fb885b6c9c0583b902520930962
