@@ -5,7 +5,7 @@ import numpy as np
 # --- ⚠️ REEMPLAZAMOS VALORES  TIEMPOS REGISTRADOS ⚠️ ---
 # ----------------------------------------------------------------------
 
-# El tiempo que obtuvo
+# El tiempo que se obtuvo
 tiempo_original = 48.50  
 # El tiempo de ejecución 
 tiempo_optimizado = 0.1345 
