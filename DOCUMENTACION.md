@@ -95,6 +95,11 @@ Dado que el tiempo de ejecución total del script (tiempo real) fue de 0.1345 se
 El percall (tiempo por llamada) para es_primo_optimizado es de 0.000 segundos (en realidad, 0.109 segundos / 100,000 llamadas = 0.00000109 segundos por llamada), lo que confirma su alta eficiencia tras la optimización.]**
 
 **Análisis:** La tabla de profiling confirma que la función **`es_primo_optimizado`** es, como se esperaba, la función con la mayor cantidad de llamadas (`ncalls`) y donde se concentra el tiempo de ejecución (`tottime`). Sin embargo, el tiempo por llamada (`percall`) es extremadamente bajo, validando que la optimización algorítmica fue exitosa.
+El análisis de la comparación de tiempos de ejecución es el punto culminante del trabajo, ya que cuantifica la mejora de rendimiento lograda.
+
+Rendimiento CuantificadoUtilizando los tiempos registrados:Versión del CódigoTiempo de Ejecución (s)Original$48.50$ Optimizado$0.1345$ 
+
+Reducción Absoluta:$$\text{Tiempo de Reducción} = 48.50 \text{ s} - 0.1345 \text{ s} = 48.3655 \text{ s}$$Se eliminaron aproximadamente $48.37$ segundos de tiempo de espera.Porcentaje de Mejora (Aceleración):$$\text{Porcentaje de Mejora} = \left( 1 - \frac{\text{Tiempo Optimizado}}{\text{Tiempo Original}} \right) \times 100\%$$$$\text{Porcentaje de Mejora} = \left( 1 - \frac{0.1345}{48.50} \right) \times 100\% \approx (1 - 0.00277) \times 100\% \approx 99.72\%$$La optimización logró una mejora de rendimiento de aproximadamente $99.72\%$.Factor de Aceleración (Speedup):$$\text{Factor de Aceleración} = \frac{\text{Tiempo Original}}{\text{Tiempo Optimizado}}$$$$\text{Factor de Aceleración} = \frac{48.50}{0.1345} \approx 360.59$$El código optimizado es aproximadamente 360 veces más rápido que el código original.
 
 ---
 
@@ -102,11 +107,9 @@ El percall (tiempo por llamada) para es_primo_optimizado es de 0.000 segundos (e
 
 **Conclusiones:**
 
-1.  **Validación de la Optimización Algorítmica:** La principal conclusión es que el cambio en la lógica del bucle (de $O(n)$ a $O(\sqrt{n})$) tuvo un impacto superior al de cualquier optimización estructural de Python o de librería. Esto subraya la importancia de optimizar primero el **algoritmo**.
-2.  **Importancia del Profiling:** La herramienta `cProfile` fue fundamental para verificar que el tiempo se estaba invirtiendo en la función correcta y para cuantificar la eficiencia lograda, cumpliendo con la buena práctica de **medir antes de optimizar**.
-3.  **Cumplimiento de Buenas Prácticas:** El uso de `list comprehensions`, la importación de librerías con alias (NumPy) y la documentación clara demuestran la aplicación de buenas prácticas para desarrollar código legible y eficiente.
-
 La optimización redujo el cuello de botella del código original (la función de comprobación de primalidad) de manera drástica. La tabla de cProfile muestra claramente que la función optimizada es extremadamente rápida, con un tiempo por llamada despreciable, lo que llevó a la mejora de rendimiento del 99.72% calculada en la sección anterior.
+
+La drástica mejora en el rendimiento, confirmada por un factor de aceleración de más de $360$ veces, se debe a la aplicación del principio fundamental de la optimización: evitar trabajo innecesario. Al reemplazar la fuerza bruta del código original con un algoritmo matemático eficiente (limitando el rango de divisores a verificar hasta la raíz cuadrada del número), se redujo significativamente la complejidad del cálculo, tal como lo predijo y verificó la herramienta cProfile.
 
 **Recomendaciones:**
 
