@@ -1,9 +1,13 @@
 # Actividad Autónoma 4: Buenas Prácticas en Programación para Ciencia de Datos
 
 **Nombres:** Gabriel Alejandro Niama Martínez.
+
 **Fecha:** 23/11/2025
+
 **Carrera:** Ciencia de datos e Inteligencia artificial.
+
 **Periodo académico:** 2025 - 2S
+
 **Semestre:** Tercero
 
 ---
